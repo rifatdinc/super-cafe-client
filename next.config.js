@@ -28,6 +28,12 @@ const nextConfig = {
 		fileLoaderRule.exclude = /\.svg$/i
 		return config
 	},
+	webpack: (config, { isServer }) => {
+		if (!isServer) {
+			config.output.publicPath = './_next/';
+		}
+		return config;
+	},
 }
 
 export default nextConfig

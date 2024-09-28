@@ -43,6 +43,15 @@ const installExtensions = async () => {
 	// @ts-expect-error Weird behaviour
 	electronDevtoolsInstaller.default([REDUX_DEVTOOLS]).catch(console.log)
 	*/
+	if (electronIsDev) {
+		const installer = await import('electron-devtools-installer');
+		const forceDownload = !!process.env.UPGRADE_EXTENSIONS;
+		const extensions: (keyof typeof installer)[] = ['REACT_DEVELOPER_TOOLS'];
+		
+		return Promise.all(
+			extensions.map((name) => installer.default(installer[name] as unknown as string, forceDownload))
+		).catch(console.log);
+	}
 }
 
 const spawnAppWindow = async () => {

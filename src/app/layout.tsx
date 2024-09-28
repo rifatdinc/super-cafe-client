@@ -22,14 +22,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={GeistSans.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <NextUIProvider>
-            {children}
-          </NextUIProvider>
-        </ThemeProvider>
-      </body>
-    </html>
+		<html lang="en" suppressHydrationWarning>
+    <body className={GeistSans.className}>
+      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <NextUIProvider>
+          {children}
+        </NextUIProvider>
+      </ThemeProvider>
+    </body>
+  </html>
   );
 }
