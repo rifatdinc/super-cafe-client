@@ -6960,12 +6960,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.12.12, @types/node@npm:^20.9.0":
+"@types/node@npm:^20.9.0":
   version: 20.16.9
   resolution: "@types/node@npm:20.16.9"
   dependencies:
     undici-types: "npm:~6.19.2"
   checksum: 10c0/52d7cbd6792a26e6757c913d1f6dd0fb0104ac44c93dd87480c011d1211b3a1ba282962996bf6aec03f633b5b39f61576f1bafe8436592ab08ad39464e53e4b0
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^22.7.5":
+  version: 22.7.5
+  resolution: "@types/node@npm:22.7.5"
+  dependencies:
+    undici-types: "npm:~6.19.2"
+  checksum: 10c0/cf11f74f1a26053ec58066616e3a8685b6bcd7259bc569738b8f752009f9f0f7f85a1b2d24908e5b0f752482d1e8b6babdf1fbb25758711ec7bb9500bfcd6e60
   languageName: node
   linkType: hard
 
@@ -11478,7 +11487,7 @@ __metadata:
     "@radix-ui/react-slot": "npm:^1.0.2"
     "@radix-ui/react-tooltip": "npm:^1.0.7"
     "@svgr/webpack": "npm:^8.1.0"
-    "@types/node": "npm:^20.12.12"
+    "@types/node": "npm:^22.7.5"
     "@types/react": "npm:^18.3.3"
     "@types/react-dom": "npm:^18.3.0"
     class-variance-authority: "npm:^0.7.0"
